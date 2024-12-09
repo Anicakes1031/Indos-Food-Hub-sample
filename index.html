@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Indos FoodHub</title>
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+   <script src = "script.js"></script>
+</head>
+   
+<header>
+   <h1>Indos FoodHub😋</h1>
+   <nav>
+      <ul>
+         <li><a href="#home">Home</a></li>
+         <li><a href="#about">About</a></li>
+         <li><a href="#menu">Menu</a></li>
+         <li><a href="#contact">Contact Us</a></li>
+      </ul>
+   </nav>
+</header>
+
+<main>
+   <!-- Home Section -->
+   <section id="home" class="home">
+      <div class="swiper home-slider">
+         <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+               <div class="content">
+                  <span>Order Online</span>
+                  <h3>Premium Burger</h3>
+                  <a href="#menu" class="btn">See Menus</a>
+               </div>
+               <div class="image">
+                  <img src="burger.png" alt="Premium Burger">
+               </div>
+            </div>
+            <div class="swiper-slide slide">
+               <div class="content">
+                  <span>Order Online</span>
+                  <h3>Yummy Takoyaki</h3>
+                  <a href="#menu" class="btn">See Menus</a>
+               </div>
+               <div class="image">
+                  <img src="takoyaki.png" alt="Yummy Takoyaki">
+               </div>
+            </div>
+            <div class="swiper-slide slide">
+               <div class="content">
+                  <span>Order Online</span>
+                  <h3>Cheesy Baked Bangus</h3>
+                  <a href="#menu" class="btn">See Menus</a>
+               </div>
+               <div class="image">
+                  <img src="cheesyBangus.png" alt="Cheesy Baked Bangus">
+               </div>
+            </div>
+         </div>
+         <div class="swiper-pagination"></div>
+      </div>
+   </section>
+
+   <section class="category">
+      <h2 class="title">Food Category</h2>
+      <div class="box-container">
+         <a class="box"><img src="cat-1.png" alt="Fast Food"><h3>Fast Food</h3></a>
+         <a class="box"><img src="cat-2.png" alt="Main Dishes"><h3>Main Dishes</h3></a>
+         <a class="box"><img src="cat-3.png" alt="Drinks"><h3>Drinks</h3></a>
+         <a class="box"><img src="cat-4.png" alt="Desserts"><h3>Desserts</h3></a>
+      </div>
+   </section>
+
+   <section class="products">
+      <h2 class="title">Latest Dishes</h2>
+      <div class="box-container">
+         <!-- Repeat product forms as necessary -->
+      </div>
+      <div class="more-btn">
+         <a href="#menu" class="btn">View All</a>
+      </div>
+   </section>
+
+   <div class="heading" id="about">
+      <h3>About Us</h3>
+      <p><a href="#about">Home </a> <span> / About</span></p>
+   </div>
+
+   <section class="about">
+      <div class="row">
+         <div class="image">
+            <img src="about.png" alt="About Us">
+         </div>
+         <div class="content">
+            <h2>Why Choose Us?</h2>
+            <p>Syempre para maranasan naman mapili kahit dito langs HAHAHAHAHAH</p>
+            <a href="#menu" class="btn">Our Menu</a>
+         </div>
+      </div>
+   </section>
+
+   <section class="steps">
+      <h2 class="title">3 Simple Steps</h2>
+      <div class="box-container">
+         <div class="box"><img src="step-1.png" alt="Select Food"><h3>Select Food</h3><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, hic.</p></div>
+         <div class="box"><img src="step-2.png" alt="30 Minutes Delivery"><h3>30 Minutes Delivery</h3><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, hic.</p></div>
+         <div class="box"><img src="step-3.png" alt="Enjoy Food"><h3>Enjoy Food!</h3><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, hic.</p></div>
+      </div>
+   </section>
+
+   <div class="heading" id="menu">
+      <h3>Our Menu</h3>
+      <p><a href="#menu">Home </a> <span> / Menu</span></p>
+   </div>
+   
+   <section class="products">
+      <h2 class="title">Latest Dishes</h2>
+      <div class="box-container">
+         <form method="post" class="box">
+            <a class="fas fa-eye"></a>
+            <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+            <img src="burger.png" alt="Premium Burger">
+            <a class="cat">Fast Food</a>
+            <div class="name">Premium Burger</div>
+            <div class="flex">
+               <div class="price"><span>₱</span>135<span>/-</span></div>
+               <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+            </div>
+         </form>
+         <form method="post" class="box">
+            <a class="fas fa-eye"></a>
+            <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+            <img src="takoyaki.png" alt="Yummy Takoyaki">
+            <a class="cat">Fast Food</a>
+            <div class="name">Yummy Takoyaki (4pcs)</div>
+            <div class="flex">
+               <div class="price"><span>₱</span>40<span>/-</span></div>
+               <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+            </div>
+         </form>
+         <form method="post" class="box">
+            <a class="fas fa-eye"></a>
+            <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+            <img src="cheesyBangus.png" alt="Cheesy Baked Bangus">
+            <a class="cat">Main Dishes</a>
+            <div class="name">Cheesy Baked Bangus</div>
+            <div class="flex">
+               <div class="price"><span>₱</span>325<span>/-</span></div>
+               <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+            </div>
+         </form>
+      </div>
+      
+      <div class="more-btn">
+         <a href="#menu" class="btn">View All</a>
+      </div>
+   </section>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+   <div class="heading">
+      <section id="contact" class="contact">
+         <h3>Contact Us</h3>
+         <p class="contact-description">Feel free to reach out to us through any of the following methods:</p>
+         <p class="contact-info"><strong>Facebook Page:</strong> <a href="https://www.facebook.com/IndosFoodHub" target="_blank">Indos FoodHub</a></p>
+         <p class="contact-info"><strong>Phone Number:</strong> +63 912 345 6789</p>
+         <p class="contact-info"><strong>Address:</strong> 123 Food Street, Food City, Philippines</p>
+      </section>
+   </div>
+   
+
+   
+
+</main>
+
+
+<footer>
+   <div class="credit">&copy; Copyright @ 2024 by <span>TiTanGoals</span> | All Rights Reserved!</div>
+</footer>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+<script>
+var swiper = new Swiper(".home-slider", {
+   loop: true,
+   grabCursor: true,
+   effect: "flip",
+   pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+   },
+});
+var swiperReviews = new Swiper(".reviews-slider", {
+   loop: true,
+   grabCursor: true,
+   spaceBetween: 20,
+   pagination: {
+      el: ".swiper-pagination",
+   },
+   breakpoints: {
+      550: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+   },
+});
+</script>
+
+</body>
+</html>
